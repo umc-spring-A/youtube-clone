@@ -1,4 +1,4 @@
-package org.springbootstudyateam.youtube.config;
+package org.springbootstudyateam.youtube.api.config;
 
 import org.springbootstudyateam.youtube.token.AuthTokenProvider;
 import org.springframework.beans.factory.annotation.Value;
