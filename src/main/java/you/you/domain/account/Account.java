@@ -1,4 +1,4 @@
-package you.you.domain;
+package you.you.domain.account;
 
 import lombok.*;
 import javax.persistence.*;
@@ -11,12 +11,13 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Entity
 @Table(name="user")
-public class User {
+public class Account {
     @Id // PK
     @GeneratedValue(strategy = GenerationType.IDENTITY) // AUTO_INCREMENT IN MYSQL
     private Long id;
 
     @Column(name="email", unique = true)
     private String email;
+    private String password;
 
 }
