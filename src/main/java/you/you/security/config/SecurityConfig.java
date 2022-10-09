@@ -53,7 +53,7 @@ public class SecurityConfig {
                 .loginPage("/main") // 기본 로그인 페이지 변경
                 .usernameParameter("email")
                 .passwordParameter("password")
-                .loginProcessingUrl("/users/login")
+                .loginProcessingUrl("/api/users/login")
                 //.defaultSuccessUrl("/items")
                 .failureHandler(userLoginFailHandler)
                 .permitAll()
