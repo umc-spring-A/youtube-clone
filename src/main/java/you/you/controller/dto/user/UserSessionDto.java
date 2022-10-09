@@ -1,4 +1,4 @@
-package you.you.controller.dto;
+package you.you.controller.dto.user;
 
 import lombok.Builder;
 import lombok.Getter;
