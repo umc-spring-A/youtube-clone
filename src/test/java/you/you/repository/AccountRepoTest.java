@@ -5,25 +5,25 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import you.you.domain.user.User;
-import you.you.domain.user.UserRepository;
+import you.you.domain.account.Account;
+import you.you.domain.account.AccountRepository;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
-public class UserRepoTest {
+public class AccountRepoTest {
 
     @Autowired
-    private UserRepository userRepository;
+    private AccountRepository accountRepository;
 
     @Test
     @DisplayName("사용자가 DB에 저장이 잘 되는지 확인")
     void saveUser(){
-        User user = User.builder()
+        Account account = Account.builder()
                 .email("test@naver.com")
                 .build();
-        User ret = userRepository.save(user);
+        Account ret = accountRepository.save(account);
         assertThat(ret).isNotNull();
     }
 }
