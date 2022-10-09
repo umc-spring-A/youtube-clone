@@ -2,7 +2,7 @@ package you.you.security.service;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
-import you.you.controller.dto.UserSessionDto;
+import you.you.controller.dto.user.UserSessionDto;
 import you.you.domain.account.Account;
 
 import java.util.Collection;
