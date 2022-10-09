@@ -1,4 +1,4 @@
-package you.you.domain;
+package you.you.domain.user;
 
 import lombok.*;
 import javax.persistence.*;

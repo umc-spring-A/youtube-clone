@@ -1,4 +1,4 @@
-package you.you.domain;
+package you.you.domain.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
